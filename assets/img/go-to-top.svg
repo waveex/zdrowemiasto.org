@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="go-to-top">
+    <path d="M0 0L36 0L36 36L0 36L0 0Z" id="bg" fill="#01A79D" fill-rule="evenodd" stroke="none" />
+    <g id="ChevronUpSmall" transform="translate(13 14)">
+      <path d="M5 0L10 5L8.81023 6.18486L5 2.37463L1.18977 6.18486L0 5L5 0L5 0Z" id="Shape" fill="#F7F2F4" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

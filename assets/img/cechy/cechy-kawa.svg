@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L60 0L60 60L0 60L0 0Z" id="path_1" />
+    <rect width="60" height="60" id="artboard_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#artboard_1" clip-rule="evenodd" />
+    </clipPath>
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="cechy-kawa" clip-path="url(#clip_1)">
+    <g id="cecha-kawa">
+      <path d="M0 0L60 0L60 60L0 60L0 0Z" id="Background" fill="none" fill-rule="evenodd" stroke="none" />
+      <g clip-path="url(#mask_1)">
+        <g id="Group" transform="translate(1.2144165 0.16613197)">
+          <path d="M55.153 16.097C55.153 20.1724 51.8366 23.4889 47.7611 23.4889L41.8794 23.4889L41.8794 8.47981L47.7611 8.47981C51.8366 8.47981 55.153 11.7968 55.153 15.874L55.153 16.097L55.153 16.097ZM39.4619 29.4764C39.4619 35.4781 34.5798 40.3602 28.5798 40.3602L13.3019 40.3602C7.3002 40.3602 2.41812 35.4781 2.41812 29.4764L2.41812 2.41982L39.4619 2.41982L39.4619 29.4764L39.4619 29.4764ZM47.7611 6.06226L41.8794 6.06226L41.8794 1.21019C41.8794 0.543397 41.3383 0 40.6715 0L1.20962 0C0.541132 0 0 0.543396 0 1.21019L0 29.4764C0 36.81 5.9666 42.7783 13.3019 42.7783L28.5798 42.7783C35.9134 42.7783 41.8794 36.81 41.8794 29.4764L41.8794 25.907L47.7611 25.907C53.1702 25.907 57.5711 21.506 57.5711 16.097L57.5711 15.874C57.5711 10.4632 53.1702 6.06226 47.7611 6.06226" transform="translate(0 16.889435)" id="Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+          <path d="M1.20962 12.8808C1.87868 12.8808 2.41981 12.3396 2.41981 11.6711L2.41981 1.20792C2.41981 0.541132 1.87868 0 1.20962 0C0.541133 0 0 0.541132 0 1.20792L0 11.6711C0 12.3396 0.541133 12.8808 1.20962 12.8808" transform="translate(19.730377 0)" id="Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+          <path d="M1.21019 12.8808C1.87868 12.8808 2.41981 12.3396 2.41981 11.6711L2.41981 1.20792C2.41981 0.541132 1.87868 0 1.21019 0C0.541132 0 0 0.541132 0 1.20792L0 11.6711C0 12.3396 0.541132 12.8808 1.21019 12.8808" transform="translate(8.071136 0)" id="Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+          <path d="M1.20962 12.8808C1.87868 12.8808 2.41981 12.3396 2.41981 11.6711L2.41981 1.20792C2.41981 0.541132 1.87868 0 1.20962 0C0.541133 0 0 0.541132 0 1.20792L0 11.6711C0 12.3396 0.541133 12.8808 1.20962 12.8808" transform="translate(31.688477 0)" id="Shape" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
