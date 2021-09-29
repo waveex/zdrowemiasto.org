@@ -1,313 +1,333 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundacja Zdrowe Miasto – Dbamy o przestrzeń, którą kochasz
+    </title>
+    <meta name="description" content="Poznaj Fundację Zdrowe Miasto">
     <link rel="stylesheet" href="./assets/css/main.scss">
+    <link rel="icon" type="image/png" href="./assets/img/favicin.ico"/>
 </head>
+
 <body>
-<header>
-    <img src="" alt="Logo fundacji zdrowe miasto" class="logo">
-    <nav class="navigation">
-        <ul class="navigation__list">
-            <li class="navigation__list--item">
-                <a href="" class="navigation__list--link">
-                    ORGANIZACJA
-                </a>
-            </li>
-            <li class="navigation__list--item">
-                <a href="" class="navigation__list--link">
-                    SZKOLENIA
-                </a>
-            </li>
-            <li class="navigation__list--item">
-                <a href="" class="navigation__list--link">
-                    REALIZACJE
-                </a>
-            </li>
-            <li class="navigation__list--item">
-                <a href="" class="navigation__list--link">
-                    KADRA
-                </a>
-            </li>
-            <li class="navigation__list--item">
-                <a href="" class="navigation__list--link">
-                    NASI TRENERZY
-                </a>
-            </li>
-            <li class="navigation__list--item">
-                <a href="" class="navigation__list--link">
-                    KONTAKT
-                </a>
-            </li>
-            <li class="navigation__list--item">
-                <a href="" class="navigation__list--link">
-                    WESPRZYJ NAS
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-<main>
-    <section class="video">
-       <video autoplay muted loop id="video" class="video__item">
-           <source src="./assets/video/video.mp4" type="video/mp4">
-       </video>
-    </section>
-    <section class="about">
-        <h1 class="about__title">
-            Dowiedz się <span class="about__title--special">
-                jak pomaga fundacja
-            </span>
-        </h1>
-        <div class="about__grid">
-            <div class="about__grid--item">
-                <img src="./assets/img/ikony/fundusze.png" alt="" class="grid__grid--img">
-                <p class="about__grid--title">
-                    Pozyskiwanie funduszy
-                </p>
-                <p class="aobut__grid--description">
-                    "It goes without saying that violations of the arguments and claims provides a foundation for The Method of Bulk Dimension"
-                </p>
-            </div>
-            <div class="about__grid--item">
-                <img src="./assets/img/ikony/fundusze.png" alt="" class="grid__grid--img">
-                <p class="about__grid--title">
-                    Szkolenia
-                </p>
-                <p class="aobut__grid--description">
-                    "It goes without saying that violations of the arguments and claims provides a foundation for The Method of Bulk Dimension"
-                </p>
-            </div>
-            <div class="about__grid--item">
-                <img src="./assets/img/ikony/fundusze.png" alt="" class="grid__grid--img">
-                <p class="about__grid--title">
-                    Działania promocyjne
-                </p>
-                <p class="aobut__grid--description">
-                    "It goes without saying that violations of the arguments and claims provides a foundation for The Method of Bulk Dimension"
-                </p>
-            </div>
-            <div class="about__grid--item">
-                <img src="./assets/img/ikony/fundusze.png" alt="" class="grid__grid--img">
-                <p class="about__grid--title">
-                    Partner / koordynator projektu
-                </p>
-                <p class="aobut__grid--description">
-                    "It goes without saying that violations of the arguments and claims provides a foundation for The Method of Bulk Dimension"
-                </p>
-            </div>
-            <div class="about__grid--item">
-                <img src="./assets/img/ikony/fundusze.png" alt="" class="grid__grid--img">
-                <p class="about__grid--title">
-                    Pomysł i realizacja
-                </p>
-                <p class="aobut__grid--description">
-                    "It goes without saying that violations of the arguments and claims provides a foundation for The Method of Bulk Dimension"
-                </p>
-            </div>
-            <div class="about__grid--item">
-                <img src="./assets/img/ikony/fundusze.png" alt="" class="grid__grid--img">
-                <p class="about__grid--title">
-                    Inne formy
-                </p>
-                <p class="aobut__grid--description">
-                    "It goes without saying that violations of the arguments and claims provides a foundation for The Method of Bulk Dimension"
-                </p>
-            </div>
+    <header class="header">
+        <a href="./" class="logo"></a>
+        <div id="hamburger" onclick="this.classList.toggle('open');">
+            <svg width="100" height="100" viewBox="0 0 100 100">
+                <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="line line2" d="M 20,50 H 80" />
+                <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
         </div>
-    </section>
-    <section class="parallax">
-        <p class="parallax__title">
-            Postaw na zdrowy tryb życia
-        </p>
-        <a href="#" class="parallax__button">
-            Zobacz
-        </a>
-    </section>
-<section class="hero">
-    <div class="hero__container">
-        <img src="/assets/img/onas_x2.png" alt="" class="hero__img">
-        <div class="hero__text">
-            <h2 class="hero__title">
-                O nas
-            </h2>
-            <p class="hero__description">
-                Fundacja Zdrowe Miasto ma na celu szerzenie, promowanie i propagowanie zdrowego stylu życia oraz ułatwianie mieszkańcom małych miejscowości dostępu do profesjonalnych usług.
-            </p>
-            <h2 class="hero__list--title">
-                Szkolenia
-            </h2>
-            <ul class="hero__list">
-                <li class="hero__list--item">
-                    <p class="hero__list--text">
-                        Ultrasonografia jako element diagnostyki prenatalnej cz. I i II
-                    </p>
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__list--item">
+                    <a href="./podzakladki/organizacja.html" class="navigation__list--link">
+                        ORGANIZACJA
+                    </a>
                 </li>
-                <li class="hero__list--item">
-                    <p class="hero__list--text">
-                        Psychologia zdrowia dla personelu medycznego
-                    </p>
+                <li class="navigation__list--item">
+                    <a href="./podzakladki/szkolenia.html" class="navigation__list--link">
+                        SZKOLENIA
+                    </a>
                 </li>
-                <li class="hero__list--item">
-                    <p class="hero__list--text">
-                        Kurs języka hiszpańskiego o profilu ogólnym
-                    </p>
+                <li class="navigation__list--item">
+                    <a href="./podzakladki/realizacje.html" class="navigation__list--link">
+                        REALIZACJE
+                    </a>
+                </li>
+                <li class="navigation__list--item">
+                    <a href="./podzakladki/kadra.html" class="navigation__list--link">
+                        KADRA
+                    </a>
+                </li>
+
+                <li class="navigation__list--item">
+                    <a href="./podzakladki/kontakt.html" class="navigation__list--link">
+                        KONTAKT
+                    </a>
+                </li>
+                <!-- <li class="navigation__list--item">
+                    <a href="" class="navigation__list--link">
+                        WESPRZYJ NAS
+                    </a>
+                </li> -->
+            </ul>
+        </nav>
+        <div class="social">
+            <ul class="social__list">
+                <li class="social__list--item">
+                    <a href="#" class="social__link social__link--facebook">
+
+                    </a>
+                </li>
+                   <li class="social__list--item">
+                    <a href="#" class="social__link social__link--linkedin">
+
+                    </a>
                 </li>
             </ul>
         </div>
-    </div>
-</section>
-<section class="statistics">
-    <div class="statistics__grid">
-        <div class="statistics__grid--item">
-        <img src="/assets/img/cechy/cechy-dyskusja.svg" alt="ikona dyskusji" class="statistics__img">
-        <p class="statistics__counter">
-            1345
-        </p>
-        <p class="statistics__title">
-            Przebytych dyskusji
-        </p>
-    </div>
-    <div class="statistics__grid--item">
-        <img src="/assets/img/cechy/cechy-dyskusja.svg" alt="ikona dyskusji" class="statistics__img">
-        <p class="statistics__counter">
-            1345
-        </p>
-        <p class="statistics__title">
-            Przebytych dyskusji
-        </p>
-    </div>
-    <div class="statistics__grid--item">
-        <img src="/assets/img/cechy/cechy-kawa.svg" alt="ikona kawy" class="statistics__img">
-        <p class="statistics__counter">
-            2345
-        </p>
-        <p class="statistics__title">
-            Wypitych kaw
-        </p>
-    </div>
-    <div class="statistics__grid--item">
-        <img src="/assets/img/cechy/cechy-zadowolenie.svg" alt="ikona zadowolenie" class="statistics__img">
-        <p class="statistics__counter">
-            1345
-        </p>
-        <p class="statistics__title">
-            Zadwolonych klientów
-        </p>
-    </div>
-    <div class="statistics__grid--item">
-        <img src="/assets/img/cechy/cechy-referencje.svg" alt="ikona referencji" class="statistics__img">
-        <p class="statistics__counter">
-            55
-        </p>
-        <p class="statistics__title">
-            Otrzymanych referencji
-        </p>
-    </div>
-    </div>
-</section>
-<section class="newsletter">
-    <form action="submit" class="newsletter__title">
-        <label for="newsletterInput" class="newsletter__title">Zapisz się na newsletter i bądź na bieżąco</label>
-        <input type="text" class="newsletter__input">
-        <input type="submit" class="newsletter__submit" value="Zapisz">
-    </form>
-    <img src="/assets/img/newsletter_1.png" alt="obraz osoby na rowerze" class="newsletter__img">
-
-</section>
-<section class="parallax-footer">
-    <h2 class="parallax-title">
-        Wykorzystaj w praktyce zdobytą wiedzę
-    </h2>
-    <a href="#" class="parallax__button">
-        Dowiedz się więcej
-    </a>
-</section>
-<section class="contact">
-    <artice class="contact__info">
-        <h2 class="contact__title">Porozmawiajmy</h2>
-        <p class="contact__description">
-            Razem zadbajmy o przestrzeni, którą kochasz.
-        </p>
-        <div class="contact__info">
-            <h3 class="contact__info--title">Fundacja Zdrowe Miasto</h3>
-            <div class="contact__grid">
-                <div class="contact__grid--item">
-                    <h4 class="contact__grid--title">
-                        Adres
-                    </h4>
-                    <p class="contact__grid--description">
-                        Zielona 2/27, 16-030 Ciasne, gm. Supraśl
+    </header>
+    <main>
+        <section class="video">
+            <video autoplay muted loop id="video" class="video__item">
+                <source src="./assets/video/video.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section class="about">
+            <h1 class="about__title">
+                Dowiedz się <span class="about__title--special">
+                    jak pomaga fundacja
+                </span>
+            </h1>
+            <div class="about__grid">
+                <div class="about__grid--item">
+                    <img src="./assets/img/ikony/fundusze.png" alt="" class="about__grid--img">
+                    <p class="about__grid--title">
+                        POLSKI KAPITAŁ
+                    </p>
+                    <p class="about__grid--description">
+                        koordynator programu 100% Polski Kapitał
                     </p>
                 </div>
-                <div class="contact__grid--item">
-                    <h4 class="contact__grid--title">
-                      Biuro
-                    </h4>
-                    <p class="contact__grid--description">
-                        Alfa Centrum, ul. Świętojańska 15, 15-277 Białystok
+                <div class="about__grid--item">
+                    <img src="./assets/img/ikony/szkolenia.png" alt="" class="about__grid--img">
+                    <p class="about__grid--title">
+                        SZKOLENIA I WARSZTATY MEDYCZNE
+                    </p>
+                    <p class="about__grid--description">
+                        inicjowanie i realizacja w ramach Polskiego Wschodniego Klastra Medycznego – <a href="https://klastermedyczny.org/szkolenia/" target="_blank" rel="noreferrer noopener">sprawdź</a>
                     </p>
                 </div>
-                <div class="contact__grid--item">
-                    <h4 class="contact__grid--title">
-                        Telefon                    </h4>
-                    <p class="contact__grid--description">
-                        <a href="tel:+48691508000" class="contact__grid--link">+48 691 50 8000</a>
+                <div class="about__grid--item">
+                    <img src="./assets/img/ikony/promocja.png" alt="" class="about__grid--img">
+                    <p class="about__grid--title">
+                        ZDROWY PR
+                    </p>
+                    <p class="about__grid--description">
+                        działania PR z zakresu ochrony i promocji zdrowia
                     </p>
                 </div>
-                <div class="contact__grid--item">
-                    <h4 class="contact__grid--title">
-                        E-mail
-                    </h4>
-                    <p class="contact__grid--description">
-                        <a href="mailto:biuro@zdrowemiasto.org" class="contact__grid--link">biuro@zdrowemiasto.org</a>
+                <div class="about__grid--item">
+                    <img src="./assets/img/ikony/partner.png" alt="" class="about__grid--img">
+                    <p class="about__grid--title">
+                        Partner / koordynator projektu
+                    </p>
+                    <p class="about__grid--description">
+                        "It goes without saying that violations of the arguments and claims provides a foundation for
+                        The Method of Bulk Dimension"
+                    </p>
+                </div>
+                <div class="about__grid--item">
+                    <img src="./assets/img/ikony/pomysl-realizacja.png" alt="" class="about__grid--img">
+                    <p class="about__grid--title">
+                        INTERNACJONALIZACJA
+                    </p>
+                    <p class="about__grid--description">
+                        doradztwo w zakresie pozyskiwania środków na umiędzynarodowienia działalności
+                    </p>
+                </div>
+                <div class="about__grid--item">
+                    <img src="./assets/img/ikony/inne-formy.png" alt="" class="about__grid--img">
+                    <p class="about__grid--title">
+                        REWITALIZACJA
+                    </p>
+                    <p class="about__grid--description">
+                        projekty rewitalizacji dla samorządów
                     </p>
                 </div>
             </div>
-        </div>
-    </artice>
-    <div class="contact__form">
-<h2 class="contact__form--title contact__title">
-    Napisz do nas
-</h2>
-<form>
+        </section>
+        <section class="parallax">
+            <p class="parallax__title">
+                Jesteś zainteresowany, napisz, zadzwoń, spotkamy się nie tylko on-line?
+            </p>
+            <a href="/podzakladki/kontakt.html" class="parallax__button">
+             Porozmawiajmy
+            </a>
+        </section>
+        <section class="hero">
 
-        <label for="name">Imię i nazwisko</label>
-        <input type="text" name="name" id="name" required>
-<div class="contact__form--data">
-    <div class="contact__form--item">
-        <label for="topic">Temat</label>
-        <input type="text" name="topic" id="topic" required>
-    </div>
-    <div class="contact__form--item">
-        <label for="email">Adres e-mail: </label>
-        <input type="email" name="email" id="email" required>
-    </div>
-    <div class="contact__form--item">
-        <label for="textarea">Adres e-mail: </label>
-        <input type="text" name="textarea" id="textarea" required>
-    </div>
-    <div class="contact__form--item">
-        <label for="checkbox">Deklaracja zgody na przetwarzanie danych osobowych zgodnie z ustawą.... deklaracja zgody na przetwarzanie danych osobowych zgodnie z ustawą.... </label>
-        <input type="checkbox" name="checkbox" id="checkbox" required>
-    </div>
-    <div class="contact__form--item">
-        <input type="submit" name="submit" id="submit"  value="Wyślij wiadomość">
-    </div>
-    </div>
-</form>
-    </div>
-</section>
-<section class="gotoup">
-    <a href="#" class="gotoup"></a>
-</section>
-<footer>
-    <img src="/assets/img/logo/fzm-top-white.png" alt="logo fundacji zdrowe miasto" class="footer__logo">
-    <p class="copyright">© 2021. Fundacja Zdrowe Miasto</p>
-</footer>
-</main>
+            <img src="/assets/img/onas_x2.png" alt="" class="hero__img">
+            <div class="hero__text">
+                <h2 class="hero__title">
+                    O nas
+                </h2>
+                <p class="hero__description">
+                    Fundacja Zdrowe Miasto ma na celu szerzenie, promowanie i propagowanie zdrowego stylu życia oraz
+                    ułatwianie mieszkańcom małych miejscowości dostępu do profesjonalnych usług.
+                </p>
+                <h2 class="hero__title hero__list--title ">
+                    Szkolenia
+                </h2>
+                <ul class="hero__list">
+                    <li class="hero__list--item">
+                        <p class="hero__list--text">
+                            Ultrasonografia jako element diagnostyki prenatalnej cz. I i II
+                        </p>
+                    </li>
+                    <li class="hero__list--item">
+                        <p class="hero__list--text">
+                            Psychologia zdrowia dla personelu medycznego
+                        </p>
+                    </li>
+                    <li class="hero__list--item">
+                        <p class="hero__list--text">
+                            Kurs języka hiszpańskiego o profilu ogólnym
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="statistics">
+            <div class="statistics__item statistics__item--dark">
+                <img src="/assets/img/cechy/cechy-dyskusja.svg" alt="ikona dyskusji" class="statistics__img">
+                <p class="statistics__counter">
+                    1345
+                </p>
+                <p class="statistics__title">
+                    Przebytych dyskusji
+                </p>
+            </div>
+            <div class="statistics__item">
+                <img src="/assets/img/cechy/cechy-kawa.svg" alt="ikona kawy" class="statistics__img">
+                <p class="statistics__counter">
+                    2345
+                </p>
+                <p class="statistics__title">
+                    Wypitych kaw
+                </p>
+            </div>
+            <div class="statistics__item statistics__item--dark">
+                <img src="/assets/img/cechy/cechy-zadowolenie.svg" alt="ikona zadowolenie" class="statistics__img">
+                <p class="statistics__counter">
+                    1345
+                </p>
+                <p class="statistics__title">
+                    Zadwolonych klientów
+                </p>
+            </div>
+            <div class="statistics__item">
+                <img src="/assets/img/cechy/cechy-referencje.svg" alt="ikona referencji" class="statistics__img">
+                <p class="statistics__counter">
+                    55
+                </p>
+                <p class="statistics__title">
+                    Otrzymanych referencji
+                </p>
+            </div>
+        </section>
+        <section class="newsletter">
+            <form action="submit" class="newsletter__form">
+                <label for="newsletterInput" class="newsletter__title">Zapisz się na newsletter i bądź na
+                    bieżąco</label>
+                <div class="newsletter__input--wraper">
+                    <input type="text" class="newsletter__input" placeholder="wpisz swój adres e-mail">
+                    <input type="submit" class="newsletter__submit" value="Zapisz się">
+                </div>
+            </form>
+            <img src="/assets/img/newsletter_1.png" alt="obraz osoby na rowerze" class="newsletter__img">
+
+        </section>
+        <section class="parallax-footer parallax">
+            <h2 class="parallax__title">
+                Wykorzystaj w praktyce zdobytą wiedzę
+            </h2>
+            <a href="#" class="parallax__button">
+                Dowiedz się więcej
+            </a>
+        </section>
+        <section class="contact">
+            <div class="contact__info">
+                <h2 class="contact__title">Porozmawiajmy</h2>
+                <p class="contact__description">
+                    Razem zadbajmy o przestrzeni, którą kochasz.
+                </p>
+                <div class="contact__info">
+                    <h3 class="contact__info--title">Fundacja Zdrowe Miasto</h3>
+                    <div class="contact__grid">
+                        <div class="contact__grid--item">
+                            <h4 class="contact__grid--title">
+                                Adres
+                            </h4>
+                            <p class="contact__grid--description">
+                                Zielona 2/27, 16-030 Ciasne, gm. Supraśl
+                            </p>
+                        </div>
+                        <div class="contact__grid--item">
+                            <h4 class="contact__grid--title">
+                                Biuro
+                            </h4>
+                            <p class="contact__grid--description">
+                                Alfa Centrum, ul. Świętojańska 15, 15-277 Białystok
+                            </p>
+                        </div>
+                        <div class="contact__grid--item">
+                            <h4 class="contact__grid--title">
+                                Telefon </h4>
+                            <p class="contact__grid--description">
+                                <a href="tel:+48691508000" class="contact__grid--link">+48 691 50 8000</a>
+                            </p>
+                        </div>
+                        <div class="contact__grid--item">
+                            <h4 class="contact__grid--title">
+                                E-mail
+                            </h4>
+                            <p class="contact__grid--description">
+                                <a href="mailto:biuro@zdrowemiasto.org"
+                                    class="contact__grid--link">biuro@zdrowemiasto.org</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact__form">
+                <h2 class="contact__form--title contact__title">
+                    Napisz do nas
+                </h2>
+                <form method="POST" id="form">
+
+                    <input type="text" name="name" id="name" placeholder="Imię i nazwisko" required>
+                    <div class="contact__form--data">
+                        <div class="contact__form--item">
+                            <input type="text" name="topic" id="topic" placeholder="Temat" required>
+                        </div>
+                        <div class="contact__form--item">
+                            <input type="email" name="email" id="email" placeholder="Adres e-mail" required>
+                        </div>
+                        <div class="contact__form--item">
+                            <input type="text" name="textarea" id="message" placeholder="Treść" required>
+                        </div>
+                        <div class="contact__form--item contact__form--checkbox">
+                            <label for="checkbox">Deklaracja zgody na przetwarzanie danych osobowych zgodnie z
+                                ustawą.... deklaracja zgody na przetwarzanie danych osobowych zgodnie z ustawą....
+                            </label>
+                            <input type="checkbox" name="checkbox" id="checkbox" required>
+                        </div>
+                        <div class="contact__form--item">
+                            <input type="submit" name="submit" id="submit" value="Wyślij wiadomość">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+            </main>
+            <footer>
+                <img src="/assets/img/logo/fzm-top-white.png" alt="logo fundacji zdrowe miasto" class="footer__logo">
+                <p class="copyright">© 2021. Fundacja Zdrowe Miasto</p>
+
+
+                     <button   class="gotoup" title="Go to top"></button>
+            </footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/form.js"></script>
 </body>
+
 </html>
