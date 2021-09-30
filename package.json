@@ -1,7 +1,7 @@
 {
   "name": "zdrowemiasto",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/waveex/zdrowemiasto.pl.git",
   "author": "Michał <michal.jablonski097@gmail.com>",
   "license": "MIT",
@@ -10,14 +10,12 @@
     "build": "parcel build *.html"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.5",
     "sass": "^1.42.1"
   },
   "dependencies": {
     "glob-parent": "^6.0.2",
     "jquery": "^3.6.0",
-    "parcel": "^2.0.0-rc.0",
-    "uncss": "^0.17.3"
+    "parcel": "^2.0.0-rc.0"
   },
   "resolutions": {
     "postcss": "^8.2.10",
