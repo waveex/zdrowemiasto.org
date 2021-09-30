@@ -14,11 +14,12 @@
     "sass": "^1.42.1"
   },
   "dependencies": {
-    "jquery": "^3.6.0"
+    "glob-parent": "^6.0.2",
+    "jquery": "^3.6.0",
+    "parcel": "^2.0.0-rc.0"
   },
-  "resolutions":
-  {
-    "postcss": "^8.2.10"
+  "resolutions": {
+    "postcss": "^8.2.10",
+    "glob-parent": "5.1.2"
   }
-
 }
