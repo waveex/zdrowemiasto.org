@@ -16,7 +16,8 @@
   "dependencies": {
     "glob-parent": "^6.0.2",
     "jquery": "^3.6.0",
-    "parcel": "^2.0.0-rc.0"
+    "parcel": "^2.0.0-rc.0",
+    "uncss": "^0.17.3"
   },
   "resolutions": {
     "postcss": "^8.2.10",
