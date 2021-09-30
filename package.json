@@ -7,14 +7,18 @@
   "license": "MIT",
   "scripts": {
     "start": "parcel *.html",
-    "build": "parcel build --no-minify index.html"
+    "build": "parcel build *.html"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
     "sass": "^1.42.1"
   },
   "dependencies": {
-    "jquery": "^3.6.0",
-    "postcss": "^8.3.8"
+    "jquery": "^3.6.0"
+  },
+  "resolutions":
+  {
+    "postcss": "^8.2.10"
   }
+
 }
