@@ -364,15 +364,16 @@ header {
     background-size: cover;
 }
 .contact {
+
     max-width: 1630px;
 
     width: 100%;
-    flex-direction: row;
-    display: flex;
+    // flex-direction: row;
+    // display: flex;
 
     text-align: center;
     margin: 99px auto;
-    gap: 120px;
+    // gap: 120px;
     &__form {
         &--checkbox {
             display: flex;
@@ -500,12 +501,37 @@ margin-left: 10px;
     }
 
 }
+
 @media (max-width:1280px) {
+    .subtab .about__content {
+        gap: 30px;
+        margin-top: 9px;
+        margin-bottom: 40px;
+    }
+    .subtab .about__content--title {
+        margin: 20px auto;
+    }
+    .about__title--special {
+        text-align: center;
+        font-size: 32px;
+    }
+    .about__grid--title {
+        text-align: center;
+    }
+    .parallax__title {
+        text-align: center;
+        font-size: 21px;
+        max-width: 980px;
+
+    }
    .hero, .contact, .newsletter{
         flex-direction: column;
         gap: 30px;
         justify-content: center;
         align-items: center;
+    }
+      .about__content:last-child    .about__content--img {
+        display: none;
     }
 
 }
@@ -582,6 +608,10 @@ margin-left: 10px;
 }
 
 @media (max-width:991px) {
+    .subtab .content {
+        max-width: 680px;
+    }
+
     .hero__list--item::before {
         background-size: contain;
     }
@@ -601,18 +631,36 @@ margin-left: 10px;
         grid-template-rows: 1fr 1fr;
     }
 
+    .newsletter {
+        max-width: 660px;
+    }
+    .parallax__title {
 
+        max-width: 680px;
+
+    }
 }
 @media (max-width:768px) {
     header {
-        flex-direction: column;
+        gap: 0px;
+    }
+    .subtab .content {
+        max-width: 300px;
+    }
+
+    .parallax__title {
+        max-width: 300px;
+
+    }
+    .newsletter {
+        max-width: 300px;
     }
     .navigation {
         display: none;
         transition: 0.5s all;
-        position: relative;
+        position: absolute;
         width: 100%;
-        top: 20px;
+        top: 80px;
     }
     .contact, .hero {
         max-width: 300px;
