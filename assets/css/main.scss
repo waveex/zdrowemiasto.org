@@ -470,7 +470,11 @@ footer{
   .support__button {
       margin: 0;
   }
-.support-us__title{
+  .support-us__content .about__content  {
+      display: block !important;
+      text-align: center;
+  }
+  .support-us__title{
     text-align: center;
 }
 
