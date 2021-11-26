@@ -12,6 +12,9 @@
 }
 html {
     scroll-behavior: smooth;
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
 }
 body {
     font-size: 16px;
@@ -129,6 +132,7 @@ header {
     position: absolute;
     gap: 70px;
     z-index: 1;
+    left: 0;
 }
 .logo {
     background: url(../img/logo/fzm-top-white.png) no-repeat;
@@ -540,6 +544,7 @@ margin-left: 10px;
         gap: 30px;
         justify-content: center;
         align-items: center;
+        max-width: 991px;
     }
       .about__content:last-child    .about__content--img {
         display: none;
@@ -652,6 +657,9 @@ margin-left: 10px;
     }
 }
 @media (max-width:768px) {
+    .about__title--special {
+        font-size: 28px;
+    }
     header {
         gap: 0px;
     }
@@ -692,7 +700,10 @@ margin-left: 10px;
         margin-left: 0px;
 
     }
-
+   .dark .logo, .logo {
+        max-width: 170px;
+        background-size: contain;
+    }
 }
 
 .show {
