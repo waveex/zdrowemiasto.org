@@ -296,35 +296,31 @@
                 <h2 class="contact__form--title contact__title">
                     Napisz do nas
                 </h2>
-                <form method="POST" id="form">
+               <form id="form">
 
-                    <input type="name" name="name" id="name" placeholder="Imię i nazwisko" required>
-                    <div class="contact__form--data">
-                        <div class="contact__form--item">
-                            <input type="text" name="topic" id="topic" placeholder="Temat" required>
-                        </div>
-                        <div class="contact__form--item">
-                            <input type="email" name="email" id="email" placeholder="Adres e-mail" required>
-                        </div>
-                        <div class="contact__form--item">
-                            <input id="textarea" type="text" name="textarea" id="message" placeholder="Treść" required>
-                        </div>
-                        <div class="contact__form--item contact__form--checkbox">
-                            <label for="checkbox" class="agree">Wyrażam zgodę na przetwarzanie danych osobowych zgodnie
-                                z ustawą o ochronie danych osobowych w związku z wysłaniem zapytania przez formularz
-                                kontaktowy. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania.
-                                Zostałem poinformowany, że przysługuje mi prawo dostępu do swoich danych, możliwości ich
-                                poprawnie, żądania zaprzestania ich przetwarzania. Administratorem danych osobowych jest
-                                <strong>Fundacja Zdrowe Miasto ul. Zielona 2/27, 16-030 Ciasne, gm. Supraśl
+                        <input type="text" name="name" id="name" placeholder="Imię i nazwisko" required>
+                        <div class="contact__form--data">
+                            <div class="contact__form--item">
+                                <input type="text" name="subject" id="subject" placeholder="Temat" required>
+                            </div>
+                            <div class="contact__form--item">
+                                <input type="email" name="email" id="email" placeholder="Adres e-mail" required>
+                            </div>
+                            <div class="contact__form--item">
+                                <textarea  name="message" id="message" placeholder="Wiadomość" required></textarea>
+
+                            </div>
+                            <div class="contact__form--item contact__form--checkbox">
+                                <label for="checkbox" class="agree">Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z ustawą o ochronie danych osobowych w związku z wysłaniem zapytania przez formularz kontaktowy. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem poinformowany, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawnie, żądania zaprzestania ich przetwarzania. Administratorem danych osobowych jest <strong>Fundacja Zdrowe Miasto ul. Zielona 2/27, 16-030 Ciasne, gm. Supraśl
                                     NIP 9662099692, Regon 362556116, KRS 0000576858 Krajowy rejestr sądowy.</strong>
-                            </label>
-                            <input type="checkbox" name="checkbox" id="checkbox" required>
+                                </label>
+                                <input type="checkbox" name="checkbox" id="checkbox" required>
+                            </div>
+                            <div class="contact__form--item">
+                                <input type="submit" name="submit" id="submit" value="Wyślij wiadomość">
+                            </div>
                         </div>
-                        <div class="contact__form--item">
-                            <input type="submit" name="submit" id="submit" value="Wyślij wiadomość">
-                        </div>
-                    </div>
-                </form>
+                    </form>
             </div>
         </section>
 

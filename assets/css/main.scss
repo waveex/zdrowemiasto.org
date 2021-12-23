@@ -79,7 +79,18 @@ h2 {
     font-weight: bold;
     text-align: center;
 }
-
+textarea
+ {
+    width: 100%;
+    border: none;
+    color: #585858;
+    height: 50px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+textarea::placeholder{
+    color: #585858;
+}
 input[type="name" i],
 input[type="text" i],
 input[type="email" i] {
