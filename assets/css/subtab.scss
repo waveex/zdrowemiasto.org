@@ -1,0 +1,15 @@
+ #page-about-us .about__contet {
+    display: flex;
+    justify-content: center;
+     flex-direction: column;
+}
+
+#page-about-us .about__data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    &--reversed{
+flex-direction: row-reverse;
+    }
+}

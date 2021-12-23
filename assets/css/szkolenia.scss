@@ -11,23 +11,31 @@
         margin-bottom: 35px;
     }
 }
-.content {
-    max-width: 1230px;
-    width: 100%;
-    margin: 0 auto;
+.event {
+    display: flex;
+flex-direction: row;
+    gap: 10%;
+    margin: 60px 0;
+    justify-content: center;
+    align-items: center;
 }
-.subtab .about {
+.event:nth-child(2n + 1){
+    flex-direction: row-reverse;
+  }
 
-    &__content {
-        display: flex;
-        gap: 70px;
-        margin-top: 99px;
-        margin-bottom: 130px ;
-        &--img {
-            max-width: 586px;
-            width: 100%;
+.event {
+    &__info{
+        max-width: 50%;
+        &--full-width {
+            max-width: 100%;
         }
-        &--title {
+    }
+    &__img{
+        max-width: 40%;
+    }
+
+
+        &__title {
             color: #e67e22;
             font-size: 28px;
             font-weight: 600;
@@ -35,11 +43,16 @@
             width: 100%;
             margin-bottom: 40px;
         }
-        &--description {
+        & p {
+            line-height: 25px;
             text-align: justify;
         }
-
-    }
+        &__description br {
+            display: none;
+        }
+        & p br {
+            display: none;
+        }
     &__list {
         margin-top: 10px;
 
@@ -112,16 +125,49 @@
         justify-content: space-around;
     }
 
-    .content {
-        max-width: 970px;
-        width: 100%;
-        margin: 0 auto;
-        text-align: center;
-    }
+
     .subtab .about__content {
         display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     }
+}
+
+@media (max-width: 1199px) {
+    .event {
+        flex-direction: column;
+
+    }
+    .event:nth-child(2n+1) {
+        flex-direction: column;
+
+    }
+    iframe {
+        min-width: 100%;
+        width: 100%;
+    }
+    .event__info {
+        max-width: 100%;
+    }
+    .event{
+        margin: 50px auto;
+    }
+}
+@media (max-width: 991px) {
+    .banner {
+        max-width: 1920px;
+        width: 100%;
+        height: 220px;
+        background-size: cover;
+        background-position: 50% 50%;
+    }
+}
+#referencje .event {
+    justify-content: space-evenly;
+}
+#referencje .event__title{
+    margin: 10px 0;
+
+
 }
