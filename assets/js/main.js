@@ -11,35 +11,55 @@ function topFunction() {
 
 gotoup.addEventListener("click", topFunction)
 
-window.onscroll = function() {showOnScroll()};
+window.onscroll = function() {onScroll()};
+
 
 // Get the navbar
 let navbar = document.querySelector(".header");
 let about = document.querySelector(".about")
-// Get the offset position of the navbar
+// // Get the offset position of the navbar
 let sticky = navbar.offsetTop;
 let videoOffSet =  about.offsetTop;
+console.log(videoOffSet);
+// function onScroll() {
+//   if (window.pageYOffset >= sticky) {
 
-function showOnScroll() {
-  if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+//   if (window.pageYOffset >= videoOffSet -  140) {
+//     navbar.classList.add("dark")
+//     gotoup.classList.add("show");
+//   }
 
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-  if (window.pageYOffset >= videoOffSet -  140) {
-    navbar.classList.add("dark")
+//   else {
+//     navbar.classList.remove("dark");
+//     gotoup.classList.remove("show");
+//   }
+// }
+let content = document.querySelector(".content");
+let contentOffSet = content.offsetTop;
+
+function onScroll() {
+  if (window.pageYOffset >= contentOffSet) {
+    navbar.classList.add("dark");
     gotoup.classList.add("show");
   }
-
   else {
     navbar.classList.remove("dark");
-    gotoup.classList.remove("show");
+  gotoup.classList.remove("show");
+
   }
 }
+
+
+
 const menu = document.querySelector(".navigation");
 const hamburger = document.querySelector("#hamburger");
 
 hamburger.addEventListener( "click", (e) => {
+  e.preventDefault();
   menu.classList.toggle("show")
+
 })

@@ -16,13 +16,13 @@
 <body>
     <header class="header">
         <a href="./" class="logo"></a>
-        <div id="hamburger" onclick="this.classList.toggle('open');">
+        <button id="hamburger">
             <svg viewBox="0 0 100 100">
                 <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
                 <path class="line line2" d="M 20,50 H 80" />
                 <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
             </svg>
-        </div>
+        </button>
         <nav class="navigation">
             <ul class="navigation__list">
                 <li class="navigation__list--item">
@@ -60,47 +60,85 @@
         <div class="social">
             <ul class="social__list">
                 <li class="social__list--item">
-                    <a href="https://www.facebook.com/Klaster-Medyczny-111352092920612/"  rel="nofollow noopener noreferrer " target="_blank" class="social__link social__link--facebook">
+                    <a href="https://www.facebook.com/zdrowemiasto.org/"  rel="nofollow noopener noreferrer " target="_blank" class="social__link social__link--facebook">
 
                     </a>
                 </li>
                    <li class="social__list--item">
-                    <a href="#" class="social__link social__link--linkedin">
+                    <a href="https://www.linkedin.com/company/fundacja-zdrowe-miasto/" class="social__link social__link--linkedin" rel="nofollow noopener noreferrer " target="_blank">
 
                     </a>
                 </li>
             </ul>
         </div>
+        <a href="/wesprzyj-nas.html" class="parallax__button support__button">
+            Wesprzyj nas
+            </a>
     </header>
     <main>
         <section class="video">
             <video autoplay muted loop id="video" class="video__item">
                 <source src="./assets/video/video.mp4" type="video/mp4">
             </video>
+            <h2 class="video__title">Dbamy o przestrzeń którą kochasz</h2>
         </section>
-        <section class="about">
-            <h1 class="about__title">
-                Dowiedz się <span class="about__title--special">
-                    jak pomaga fundacja
-                </span>
-            </h1>
+        <section class="about wrapper content">
+            <h1 class="about__title about__title--special">
+                    Fundacja Zdrowe Miasto
+                 </h1>
+                 <p class="about__descrpiton">
+                    ma na celu szerzenie, promowanie i propagowanie zdrowego stylu życia oraz ułatwianie mieszkańcom małych miejscowości dostępu do profesjonalnych usług.
+                 </p>
+
+            </section>
+            <section class="wrapper">
+                 <h2 class="about__title about__title--special">
+                    Czego Ty potrzebujesz?
+                 </h2>
             <div class="about__grid">
+                <div class="about__grid--item">
+                    <img src="./assets/img/ikony/partner.png" alt="" class="about__grid--img">
+                    <p class="about__grid--title">
+                        Partner / koordynator projektu
+                    </p>
+                    <p class="about__grid--description">
+                        Jesteśmy dobrym partnerem do realizacji dla projektów międzysektorowych. Partner NGO to zwiększenie wartości dotacji. Doświadczony partner jak Fundacja Zdrowe Miasto to referencje zrealizowanych projektów, sprawdzony personel, dobry koordynator projektu
+                    </p>
+                </div>
+                 <div class="about__grid--item">
+                    <img src="./assets/img/ikony/inne-formy.png" alt="" class="about__grid--img">
+                    <p class="about__grid--title">
+                        Działań promocyjnych
+                    </p>
+                    <p class="about__grid--description">
+                        W naszym zespole pracują specjaliści realizujący projekty reklamowe i promocyjne od wielu lat pod szyldem agencji reklamowej. Mamy na swoim koncie kampanie reklamowe, budowanie komunikacji marek i firm. Opracowanie strategii marketingowej na rynek krajowy i zagraniczny. Projekty materiałów POSM, opakowań i innych obszarów BTL. Pracowaliśmy dla sektora biznesu i JST.
+                    </p>
+                </div>
+                 <div class="about__grid--item">
+                    <img src="./assets/img/ikony/pomysl-realizacja.png" alt="" class="about__grid--img">
+                    <p class="about__grid--title">
+                        Pomysłu i realizacji
+                    </p>
+                    <p class="about__grid--description">
+                        Wykorzystujemy nasze doświadczenie i zbudowane, dobre relacje z dotychczasowymi partnerami do wymyślania i szczegółowego opracowania nowatorskich pomysłów i projektów. Towarzyszymy na etapie opracowania, realizacji i rozliczenia projektów. Sprawnie egzekwujemy założone cele i osiągamy wskaźniki. Z powodzeniem zapraszamy do współpracy ekspertów z partnerujących uczelni, biznesu i ośrodków badawczych.
+                    </p>
+                </div>
                 <div class="about__grid--item">
                     <img src="./assets/img/ikony/fundusze.png" alt="" class="about__grid--img">
                     <p class="about__grid--title">
-                        POLSKI KAPITAŁ
+                        Szkolenia
                     </p>
                     <p class="about__grid--description">
-                        koordynator programu 100% Polski Kapitał
+                        Szkolenia szyte na miarę. Osobiste i transmitowane na żywo, dostępne dla zarejestrowanych użytkowników. Szkolenia specjalistyczne dla kadry zarządzającej, specjalistów i dla początkujących, stażystów.
                     </p>
                 </div>
                 <div class="about__grid--item">
                     <img src="./assets/img/ikony/szkolenia.png" alt="" class="about__grid--img">
                     <p class="about__grid--title">
-                        SZKOLENIA I WARSZTATY MEDYCZNE
+                        Pozyskania funduszy
                     </p>
                     <p class="about__grid--description">
-                        inicjowanie i realizacja w ramach Polskiego Wschodniego Klastra Medycznego – <a href="https://klastermedyczny.org/szkolenia/" target="_blank" rel="noreferrer noopener">sprawdź</a>
+                        Jak pozyskać fundusze? zdobywanie funduszy Znamy programy UE i źródła finansowania. Wyszukujemy konkursy odpowiadające na potrzeby naszych partnerów.
                     </p>
                 </div>
                 <div class="about__grid--item">
@@ -112,44 +150,20 @@
                         działania PR z zakresu ochrony i promocji zdrowia
                     </p>
                 </div>
-                <div class="about__grid--item">
-                    <img src="./assets/img/ikony/partner.png" alt="" class="about__grid--img">
-                    <p class="about__grid--title">
-                        Partner / koordynator projektu
-                    </p>
-                    <p class="about__grid--description">
 
-                    </p>
-                </div>
-                <div class="about__grid--item">
-                    <img src="./assets/img/ikony/pomysl-realizacja.png" alt="" class="about__grid--img">
-                    <p class="about__grid--title">
-                        INTERNACJONALIZACJA
-                    </p>
-                    <p class="about__grid--description">
-                        doradztwo w zakresie pozyskiwania środków na umiędzynarodowienia działalności
-                    </p>
-                </div>
-                <div class="about__grid--item">
-                    <img src="./assets/img/ikony/inne-formy.png" alt="" class="about__grid--img">
-                    <p class="about__grid--title">
-                        REWITALIZACJA
-                    </p>
-                    <p class="about__grid--description">
-                        projekty rewitalizacji dla samorządów
-                    </p>
-                </div>
+
+
             </div>
         </section>
-        <section class="parallax">
+        <section class="parallax ">
             <p class="parallax__title">
-                Jesteś zainteresowany, napisz, zadzwoń, spotkamy się nie tylko on-line?
+                Twój projekt nie jest szablonowy? porozmawiajmy
             </p>
             <a href="/kontakt.html" class="parallax__button">
              Porozmawiajmy
             </a>
         </section>
-        <section class="hero">
+        <section class="hero wrapper">
 
             <img src="/assets/img/onas_x2.png" alt="" class="hero__img">
             <div class="hero__text">
@@ -240,7 +254,7 @@
                 Dowiedz się więcej
             </a>
         </section> -->
-        <section class="contact">
+        <section class="contact wrapper">
             <div class="contact__info">
                 <h2 class="contact__title">Porozmawiajmy</h2>
                 <p class="contact__description">
@@ -319,9 +333,7 @@
             </main>
             <footer>
                 <img src="/assets/img/logo/fzm-top-white.png" alt="logo fundacji zdrowe miasto" class="footer__logo">
-                <a href="/wesprzyj-nas.html" class="parallax__button support__button">
-                    Wesprzyj nas
-                    </a>
+
                 <p class="copyright">© 2021. Fundacja Zdrowe Miasto</p>
 
                      <button   class="gotoup" title="Go to top"></button>
