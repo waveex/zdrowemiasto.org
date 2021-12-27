@@ -21,7 +21,6 @@ const content = document.querySelector(".content");
 const main = document.querySelector("main")
 let navbarHeight = navbar.offsetHeight;
 let contentOffSet = content.offsetTop - navbarHeight;
-console.log(contentOffSet);
 let mobile =
   /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
     navigator.userAgent
