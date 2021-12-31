@@ -614,12 +614,13 @@ footer {
     text-align: center;
 }
 .mockup {
-    transform: rotate(-45deg) skewx(10deg) scale(0.5);
+    transform: rotate(-45deg) skewx(10deg) scale(0.8);
     box-shadow: -50px 50px 50px rgb(0 0 0 / 50%);
     transition: 0.4s all;
 }
 .mockup:hover {
-    transform: scale(0.9);
+    transform: scale(1.255);
+    box-shadow: 0px -20px 50px rgb(0 0 0 / 50%);
 }
 .map {
     max-width: 1920px;
@@ -666,6 +667,9 @@ footer {
     }
 }
 @media (max-width: 1440px) {
+    .mockup:hover {
+        transform: scale(1);
+    }
     .wrapper {
         max-width: 1200px;
     }
@@ -726,7 +730,13 @@ footer {
         display: none;
     }
 }
+@media (max-width:1440px) and (min-width: 992px) {
+    .contact a {
+        font-size: 14px;
+    }
+}
 @media (max-width: 1199px) {
+
     .event {
         flex-direction: column;
 
@@ -849,6 +859,9 @@ footer {
     }
 }
 @media (max-width: 768px) {
+    .mockup {
+        transform: rotate(-45deg) skewx(10deg) scale(0.5);
+    }
     .contact__title {
         font-size: 31px;
     }
