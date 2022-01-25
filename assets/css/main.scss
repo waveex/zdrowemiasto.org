@@ -313,6 +313,7 @@ header {
         font-size: 38px;
         font-weight: 500;
         font-family: "Jost", sans-serif;
+        text-shadow: 0 0 1px black;
     }
     &__button {
         color: #fff;
@@ -653,6 +654,11 @@ footer {
 }
 #referencje .banner {
     background: url(../img/referencje-banner.jpg) no-repeat;
+}
+.statut {
+    margin: 30px;
+    font-size: 23px;
+
 }
 /***************************RWD***************/
 .social {
