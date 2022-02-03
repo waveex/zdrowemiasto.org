@@ -409,12 +409,15 @@ header {
         margin-bottom: 115px;
     }
 }
+.fmForm .cta-button:hover {
+    background: #01a79d69 !important;
+    border: 1px solid #01A79D !important;
+}
 .newsletter {
-    margin: 115px auto;
-
-    width: 100%;
-    display: flex;
-    gap: 240px;
+background: url(../img/newsletter-bg.png);
+background-repeat: no-repeat;
+background-size: contain;
+margin: 30px auto;
 
     &__form {
         max-width: 814px;
@@ -659,6 +662,9 @@ footer {
     margin: 30px;
     font-size: 23px;
 
+}
+#index .contact {
+    margin-top: 0;
 }
 /***************************RWD***************/
 .social {
