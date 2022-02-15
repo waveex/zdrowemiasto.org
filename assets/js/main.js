@@ -69,7 +69,7 @@ const modalCloser = (e) => {
     modal.classList.add("hide");
   });
 };
-
+setTimeout( () => {
 if (browserLanguage !== "pl") {
   const isTranslated = htmlTag.classList.contains("translated-ltr");
   if (!isTranslated) {
@@ -78,3 +78,4 @@ if (browserLanguage !== "pl") {
     modalCloser();
     }
 }
+}, 500)
