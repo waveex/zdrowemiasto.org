@@ -37,6 +37,10 @@ a {
 }
 a:hover {
     color: #e67e22;
+    cursor: pointer;
+}
+button:hover{
+    cursor: pointer;
 }
 p {
     margin-block-start: 0;
@@ -79,8 +83,7 @@ h2 {
     font-weight: bold;
     text-align: center;
 }
-textarea
- {
+textarea {
     width: 100%;
     border: none;
     color: #585858;
@@ -88,7 +91,7 @@ textarea
     padding: 5px 15px;
     margin-bottom: 10px;
 }
-textarea::placeholder{
+textarea::placeholder {
     color: #585858;
 }
 input[type="name" i],
@@ -271,7 +274,6 @@ header {
             max-width: 50px;
             width: 100%;
         }
-
     }
 }
 .a1 {
@@ -411,13 +413,13 @@ header {
 }
 .fmForm .cta-button:hover {
     background: #01a79d69 !important;
-    border: 1px solid #01A79D !important;
+    border: 1px solid #01a79d !important;
 }
 .newsletter {
-background: url(../img/newsletter-bg.png);
-background-repeat: no-repeat;
-background-size: contain;
-margin: 30px auto;
+    background: url(../img/newsletter-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 30px auto;
 
     &__form {
         max-width: 814px;
@@ -517,7 +519,7 @@ footer {
     color: #fff;
 }
 .gotoup {
-    display: block;
+    display: none;
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
@@ -632,7 +634,8 @@ footer {
 }
 .map {
     max-width: 1920px;
-    width: 100%;}
+    width: 100%;
+}
 #map {
     max-width: 1920px;
     width: 100%;
@@ -640,7 +643,7 @@ footer {
 }
 
 /********************banery**********************/
-#page-realisations  .banner {
+#page-realisations .banner {
     background: url(../img/realizacje-banner.jpg) no-repeat;
     max-width: 1920px;
     width: 100%;
@@ -661,10 +664,43 @@ footer {
 .statut {
     margin: 30px;
     font-size: 23px;
-
 }
 #index .contact {
     margin-top: 0;
+}
+.modal {
+    position: fixed;
+    bottom: 10%;
+    max-width: 1700px;
+    width: 100%;
+    border-radius: 3px;
+    background: #2d2d2d73;
+    padding: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    -webkit-box-shadow: 8px 8px 24px 0px rgb(66 68 90);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 3px 6px 8px 0px rgb(0 0 0 / 44%);
+}
+.modal__buttons {
+    display: flex;
+    gap: 10px;
+}
+.modal__button {
+    display: flex;
+    margin: 10px 0;
+    width: 70px;
+    height: 40px;
+    color: #fff;
+}
+.modal__title {
+   margin: 30px 0;
+    color: #fff;
+    font-size: 21px;
+    font-weight: normal;
+    text-align: center;
 }
 /***************************RWD***************/
 .social {
@@ -712,9 +748,10 @@ footer {
 }
 @media (max-width: 1280px) {
     .about__grid {
-        grid-template-areas: "a1 a1 a1 b1 b1 b1"
-        "c1 c1 c1 abc2 abc2 abc2"
-        "def2 def2 def2 def2 def2 def2 ";
+        grid-template-areas:
+            "a1 a1 a1 b1 b1 b1"
+            "c1 c1 c1 abc2 abc2 abc2"
+            "def2 def2 def2 def2 def2 def2 ";
         // grid-template-columns: 1fr 1fr !important;
         // grid-template-rows: auto !important;
     }
@@ -766,23 +803,19 @@ footer {
         display: none;
     }
 }
-@media (max-width:1440px) and (min-width: 992px) {
+@media (max-width: 1440px) and (min-width: 992px) {
     .contact a {
         font-size: 14px;
     }
 }
 @media (max-width: 1199px) {
-
     .event {
         flex-direction: column;
-
     }
-    .event:nth-child(2n+1) {
+    .event:nth-child(2n + 1) {
         flex-direction: column;
-
     }
     .about__grid {
-
         &--description {
             max-width: 320px;
         }
@@ -796,7 +829,7 @@ footer {
         place-items: center;
     }
     .navigation {
-        display: block;
+        display: none;
         opacity: 0;
         transition: 0.5s all;
         position: absolute;
@@ -863,6 +896,7 @@ footer {
 }
 
 @media (max-width: 991px) {
+
     #page-contact .banner {
         background-position: 30% -80px;
     }
@@ -904,6 +938,23 @@ footer {
     }
 }
 @media (max-width: 768px) {
+    html.form-iframe  {
+        width: 100% !important;
+    }
+    .modal {
+        display: none;
+        bottom: 0%;
+        padding: 10px;
+        flex-direction: column;
+        &__buttons{
+            gap: 70px;
+        }
+        &__title {
+            max-width: 440px;
+            width: 100%;
+            font-size: 18px;
+        }
+    }
     .mockup {
         transform: rotate(-45deg) skewx(10deg) scale(0.5);
     }
@@ -977,6 +1028,9 @@ footer {
     }
 }
 @media (max-width: 600px) {
+    #fm-fc-f-2awthms2vk {
+        min-height: 480px !important;
+    }
     .support__button {
         width: 80%;
         max-width: 90px;
@@ -994,6 +1048,17 @@ footer {
 .show {
     opacity: 1;
     visibility: visible;
+    display: block;
+}
+.showModal {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+}
+.hide {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -1005,6 +1070,16 @@ footer {
     }
 }
 @media (max-width: 580px) {
+    .contact__form--data {
+           padding: 10px;
+    }
+    textarea{
+        max-width: 260px;
+        width: 100%;
+    }
+    #fm-fc-f-2awthms2vk {
+        display: none !important;
+    }
     .wrapper {
         max-width: 420px;
         margin: 0 auto;
@@ -1013,11 +1088,17 @@ footer {
         width: 100%;
         margin: 15px auto;
         max-width: 250px;
-
     }
 }
 
 @media (max-width: 440px) {
+    .gotoup {
+        right: 10px;
+    }
+
+    .modal__title {
+        max-width: 290px;
+    }
     .wrapper {
         max-width: 300px;
     }
