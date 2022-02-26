@@ -39,7 +39,7 @@ a:hover {
     color: #e67e22;
     cursor: pointer;
 }
-button:hover{
+button:hover {
     cursor: pointer;
 }
 p {
@@ -158,7 +158,6 @@ input[type="submit" i] {
 header {
     margin: 0 auto;
     width: 100%;
-    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -167,7 +166,6 @@ header {
     z-index: 1;
     left: 0;
     background: #00000047;
-    padding-bottom: 20px;
 }
 .agree {
     font-size: 12px;
@@ -193,6 +191,9 @@ header {
         justify-content: center;
         align-items: center;
         gap: 36px;
+        &--item {
+            padding: 40px 0px;
+        }
     }
 }
 .navigation__link {
@@ -593,7 +594,6 @@ footer {
     position: absolute;
     z-index: -1;
     background: #2d2d2d;
-    padding-bottom: 20px;
     opacity: 0;
     transition: 0.3s all;
 }
@@ -696,11 +696,46 @@ footer {
     color: #fff;
 }
 .modal__title {
-   margin: 30px 0;
+    margin: 30px 0;
     color: #fff;
     font-size: 21px;
     font-weight: normal;
     text-align: center;
+}
+.navigation__list--button {
+    background: none;
+    border: none;
+}
+.subNaviagtion {
+    align-items: flex-start;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    padding: 10px;
+    transition: 0.3s all ease-in-out;
+    position: absolute;
+    z-index: 3;
+}
+.subNaviagtion::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ab;
+    opacity: 0;
+    transition: 0.3s all ease-in-out;
+    position: absolute;
+    z-index: -1;
+}
+.hasSubMenu:hover .subNaviagtion {
+    display: flex;
+}
+.hasSubMenu:hover .subNaviagtion::before {
+    opacity: 1;
+}
+.subNavigation--item {
+    padding: 10px;
 }
 /***************************RWD***************/
 .social {
@@ -809,6 +844,10 @@ footer {
     }
 }
 @media (max-width: 1199px) {
+    .navigation__list--item {
+        padding: 0px 0px;
+    }
+
     .event {
         flex-direction: column;
     }
@@ -834,17 +873,27 @@ footer {
         transition: 0.5s all;
         position: absolute;
         width: 100%;
-        top: 133px;
         visibility: hidden;
-
-        top: 90px;
+        top: 120px;
         &__list {
             padding: 10px 0;
             flex-direction: column;
             width: 100%;
             background: #2d2d2d;
             width: 100%;
+            &--item {
+                position: static;
+                width: 100%;
+                text-align: center;
+                height: 100%;
+            }
         }
+    }
+    .subNaviagtion {
+        padding: 0;
+        align-items: center;
+        width: 100%;
+        height: 100%;
     }
     #hamburger {
         height: 50px;
@@ -896,7 +945,6 @@ footer {
 }
 
 @media (max-width: 991px) {
-
     #page-contact .banner {
         background-position: 30% -80px;
     }
@@ -938,7 +986,7 @@ footer {
     }
 }
 @media (max-width: 768px) {
-    html.form-iframe  {
+    html.form-iframe {
         width: 100% !important;
     }
     .modal {
@@ -946,7 +994,7 @@ footer {
         bottom: 0%;
         padding: 10px;
         flex-direction: column;
-        &__buttons{
+        &__buttons {
             gap: 70px;
         }
         &__title {
@@ -1010,7 +1058,7 @@ footer {
         max-width: 300px;
     }
     .navigation {
-        top: 133px;
+        top: 98px;
     }
     .contact,
     .hero {
@@ -1071,9 +1119,9 @@ footer {
 }
 @media (max-width: 580px) {
     .contact__form--data {
-           padding: 10px;
+        padding: 10px;
     }
-    textarea{
+    textarea {
         max-width: 260px;
         width: 100%;
     }
