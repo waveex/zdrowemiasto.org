@@ -6,15 +6,17 @@ fetch("http://klastermedyczny.org/wp-json/wp/v2/posts?per_page=100")
     const events = resp;
 
     for (let event of events) {
-
       let eventTitle = `${event.title.rendered.toString()}`;
       let eventContent = `${event.content.rendered}`;
       let eventImage = `${
-        event.better_featured_image ? event.better_featured_image.source_url : " " }`;
+        event.better_featured_image
+          ? event.better_featured_image.source_url
+          : " "
+      }`;
       let category = `${event.categories[0]}`;
       let eventTag = `${event.tags[0]}`;
-      if (category == "56" && eventTag !== '107' && eventTag !== '111'   ) {
-
+      console.log(eventTag);
+      if (category == "56" && eventTag !== "107" && eventTag !== "111" || eventTag == "113" ) {
         list.innerHTML += `
 <li class="event">
 ${
