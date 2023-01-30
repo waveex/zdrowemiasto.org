@@ -14,14 +14,14 @@
     <title>reCAPTCHA demo: Simple page</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X7Q3T2LHKP"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X7Q3T2LHKP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-X7Q3T2LHKP');
-</script>
+        gtag('config', 'G-X7Q3T2LHKP');
+    </script>
     <script>
         function onSubmit(token) {
             document.getElementById("demo-form").submit();
@@ -58,17 +58,22 @@
                         SZKOLENIA
                     </a>
                 </li>
-                             <li class="navigation__list--item">
+                <li class="navigation__list--item">
                     <a href="./referencje.html" class="navigation__link">
                         referencje
                     </a>
                 </li>
-                  <li class="navigation__list--item hasSubMenu">
-                      <button class="navigation__list--button navigation__link">udział w projekcie</button>
+                <li class="navigation__list--item hasSubMenu">
+                    <button class="navigation__list--button navigation__link">udział w projekcie</button>
                     <ul class="subNaviagtion">
                         <li class="subNavigation--item">
-                            <a href="./bony-na-szkolenia.html" class="navigation__link">
-                                bony na szkolenie
+                            <a href="./nowe-fio.html" class="navigation__link">
+                                nowe fio
+                            </a>
+                        </li>
+                        <li class="subNavigation--item">
+                            <a href="./fundusz-mlodziezowy.html" class="navigation__link">
+                                fundusz młodzieżowy
                             </a>
                         </li>
                         <li class="subNavigation--item">
@@ -115,7 +120,7 @@
         <a href="/wesprzyj-nas.html" class="parallax__button support__button">
             Wesprzyj nas
         </a>
-          </header>
+    </header>
     <main>
         <section class="video">
             <video autoplay muted loop id="video" class="video__item">
@@ -143,7 +148,7 @@
                     <p class="about__grid--title">
                         Partner / koordynator projektu
                     </p>
-                    <p class="about__grid--description " >
+                    <p class="about__grid--description ">
                         Jesteśmy dobrym partnerem do realizacji dla projektów międzysektorowych. Partner NGO to
                         zwiększenie wartości dotacji. Doświadczony partner jak Fundacja Zdrowe Miasto to referencje
                         zrealizowanych projektów, sprawdzony personel, dobry koordynator projektu
@@ -245,7 +250,7 @@
                 </p>
             </div>
         </section>-->
-         <!--
+        <!--
         <section class="parallax-footer parallax">
             <h2 class="parallax__title">
                 Wykorzystaj w praktyce zdobytą wiedzę
@@ -264,7 +269,8 @@
                 </div>
             </form>
             <img src="/assets/img/newsletter_1.png" alt="obraz osoby na rowerze" class="newsletter__img"> -->
-            <iframe id="fm-fc-f-2awthms2vk" src="https://forms.freshmail.io/f/nnrnqtfrpf/2awthms2vk/index.html" frameborder="0" marginheight="0" marginwidth="0" width="100%" style="min-height: 388px"></iframe>
+            <iframe id="fm-fc-f-2awthms2vk" src="https://forms.freshmail.io/f/nnrnqtfrpf/2awthms2vk/index.html"
+                frameborder="0" marginheight="0" marginwidth="0" width="100%" style="min-height: 388px"></iframe>
 
         </section>
 
@@ -328,31 +334,36 @@
                 <h2 class="contact__form--title contact__title">
                     Napisz do nas
                 </h2>
-               <form id="form">
+                <form id="form">
 
-                        <input type="text" name="name" id="name" placeholder="Imię i nazwisko" required>
-                        <div class="contact__form--data">
-                            <div class="contact__form--item">
-                                <input type="text" name="subject" id="subject" placeholder="Temat" required>
-                            </div>
-                            <div class="contact__form--item">
-                                <input type="email" name="email" id="email" placeholder="Adres e-mail" required>
-                            </div>
-                            <div class="contact__form--item">
-                                <textarea  name="message" id="message" placeholder="Wiadomość" required></textarea>
-
-                            </div>
-                            <div class="contact__form--item contact__form--checkbox">
-                                <label for="checkbox" class="agree">Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z ustawą o ochronie danych osobowych w związku z wysłaniem zapytania przez poz do mswia kontaktowy. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania. Zostałem poinformowany, że przysługuje mi prawo dostępu do swoich danych, możliwości ich poprawnie, żądania zaprzestania ich przetwarzania. Administratorem danych osobowych jest <strong>Fundacja Zdrowe Miasto ul. Zielona 2/27, 16-030 Ciasne, gm. Supraśl
-                                    NIP 9662099692, Regon 362556116, KRS 0000576858 Krajowy rejestr sądowy.</strong>
-                                </label>
-                                <input type="checkbox" name="checkbox" id="checkbox" required>
-                            </div>
-                            <div class="contact__form--item">
-                                <input type="submit" name="submit" id="submit" value="Wyślij wiadomość">
-                            </div>
+                    <input type="text" name="name" id="name" placeholder="Imię i nazwisko" required>
+                    <div class="contact__form--data">
+                        <div class="contact__form--item">
+                            <input type="text" name="subject" id="subject" placeholder="Temat" required>
                         </div>
-                    </form>
+                        <div class="contact__form--item">
+                            <input type="email" name="email" id="email" placeholder="Adres e-mail" required>
+                        </div>
+                        <div class="contact__form--item">
+                            <textarea name="message" id="message" placeholder="Wiadomość" required></textarea>
+
+                        </div>
+                        <div class="contact__form--item contact__form--checkbox">
+                            <label for="checkbox" class="agree">Wyrażam zgodę na przetwarzanie danych osobowych zgodnie
+                                z ustawą o ochronie danych osobowych w związku z wysłaniem zapytania przez poz do mswia
+                                kontaktowy. Podanie danych jest dobrowolne, ale niezbędne do przetworzenia zapytania.
+                                Zostałem poinformowany, że przysługuje mi prawo dostępu do swoich danych, możliwości ich
+                                poprawnie, żądania zaprzestania ich przetwarzania. Administratorem danych osobowych jest
+                                <strong>Fundacja Zdrowe Miasto ul. Zielona 2/27, 16-030 Ciasne, gm. Supraśl
+                                    NIP 9662099692, Regon 362556116, KRS 0000576858 Krajowy rejestr sądowy.</strong>
+                            </label>
+                            <input type="checkbox" name="checkbox" id="checkbox" required>
+                        </div>
+                        <div class="contact__form--item">
+                            <input type="submit" name="submit" id="submit" value="Wyślij wiadomość">
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
 

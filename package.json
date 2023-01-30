@@ -6,8 +6,8 @@
   "author": "Michał <michal.jablonski097@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "parcel *.html",
-    "build": "parcel build *.html "
+    "start project": "npm install --global yarn  && yarn install",
+    "build": "yarn run start"
   },
   "devDependencies": {
     "@parcel/config-default": "^2.0.0-rc.0",
