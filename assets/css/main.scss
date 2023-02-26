@@ -523,7 +523,6 @@ footer {
     color: #fff;
 }
 .gotoup {
-    display: none;
     position: fixed; /* Fixed/sticky position */
     bottom: 20px; /* Place the button at the bottom of the page */
     right: 30px; /* Place the button 30px from the right */
@@ -537,6 +536,7 @@ footer {
     visibility: hidden;
     opacity: 0;
     transition: 0.3s all ease-in;
+    pointer-events: none;
 }
 
 .gotoup:hover {
@@ -544,6 +544,9 @@ footer {
 
     /* When the animation is finished, start again */
     animation-iteration-count: 1;
+}
+.gotoup.show {
+    pointer-events: all;
 }
 @keyframes shake {
     0% {
