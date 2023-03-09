@@ -47,9 +47,10 @@ function onScroll() {
 
 const menu = document.querySelector(".navigation");
 const hamburger = document.querySelector("#hamburger");
+const lines = document.querySelectorAll(".line");
 
 hamburger.addEventListener("click", (e) => {
   e.preventDefault();
   menu.classList.toggle("show");
+  hamburger.classList.toggle("open");
 });
-

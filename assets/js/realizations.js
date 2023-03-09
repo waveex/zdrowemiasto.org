@@ -15,8 +15,10 @@ fetch("http://klastermedyczny.org/wp-json/wp/v2/posts?per_page=100")
       }`;
       let category = `${event.categories[0]}`;
       let eventTag = `${event.tags[0]}`;
-      console.log(eventTag);
-      if (category == "56" && eventTag !== "107" && eventTag !== "111" || eventTag == "113" ) {
+      if (
+        (category == "56" && eventTag !== "107" && eventTag !== "111") ||
+        eventTag == "113"
+      ) {
         list.innerHTML += `
 <li class="event">
 ${

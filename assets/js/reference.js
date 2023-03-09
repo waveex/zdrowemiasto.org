@@ -6,7 +6,6 @@ const printReference = () => {
     const { title, photo } = referencePosition;
     if (photo) {
       photo = require(photo);
-      console.log(photo.img);
 
       list.innerHTML += `
     <li class="event">

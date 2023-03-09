@@ -16,7 +16,6 @@ const modalCloser = (e) => {
   });
 };
 setTimeout(() => {
-  console.log(isoCode);
   if (browserLanguage !== "pl-Pl") {
     const isTranslated = htmlTag.classList.contains("translated-ltr");
     if (!isTranslated) {
